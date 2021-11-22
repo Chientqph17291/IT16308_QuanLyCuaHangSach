@@ -12,57 +12,62 @@ import java.util.Date;
  * @author Đức Toàn
  */
 public class CTPhieuNhap {
-    private int MaHD;
-    private String MaNV;
-    private int MaKH;
-    private Date NgayXuat;
-    private double Tongtien;
+   private String MaCTPN;
+   private String MaPN;
+   private String MaSach;
+   private int SoLuong;
+   private double GiaNhap;
 
-    public int getMaHD() {
-        return MaHD;
+    public CTPhieuNhap() {
     }
 
-    public void setMaHD(int MaHD) {
-        this.MaHD = MaHD;
+    public CTPhieuNhap(String MaCTPN, String MaPN, String MaSach, int SoLuong, double GiaNhap) {
+        this.MaCTPN = MaCTPN;
+        this.MaPN = MaPN;
+        this.MaSach = MaSach;
+        this.SoLuong = SoLuong;
+        this.GiaNhap = GiaNhap;
     }
 
-    public String getMaNV() {
-        return MaNV;
+    public String getMaCTPN() {
+        return MaCTPN;
     }
 
-    public void setMaNV(String MaNV) {
-        this.MaNV = MaNV;
+    public void setMaCTPN(String MaCTPN) {
+        this.MaCTPN = MaCTPN;
     }
 
-    public int getMaKH() {
-        return MaKH;
+    public String getMaPN() {
+        return MaPN;
     }
 
-    public void setMaKH(int MaKH) {
-        this.MaKH = MaKH;
+    public void setMaPN(String MaPN) {
+        this.MaPN = MaPN;
     }
 
-    public Date getNgayXuat() {
-        return NgayXuat;
+    public String getMaSach() {
+        return MaSach;
     }
 
-    public void setNgayXuat(Date NgayXuat) {
-        this.NgayXuat = NgayXuat;
+    public void setMaSach(String MaSach) {
+        this.MaSach = MaSach;
     }
 
-    public double getTongtien() {
-        return Tongtien;
+    public int getSoLuong() {
+        return SoLuong;
     }
 
-    public void setTongtien(double Tongtien) {
-        this.Tongtien = Tongtien;
+    public void setSoLuong(int SoLuong) {
+        this.SoLuong = SoLuong;
     }
 
-    public CTPhieuNhap(int MaHD, String MaNV, int MaKH, Date NgayXuat, double Tongtien) {
-        this.MaHD = MaHD;
-        this.MaNV = MaNV;
-        this.MaKH = MaKH;
-        this.NgayXuat = NgayXuat;
-        this.Tongtien = Tongtien;
+    public double getGiaNhap() {
+        return GiaNhap;
     }
+
+    public void setGiaNhap(double GiaNhap) {
+        this.GiaNhap = GiaNhap;
+    }
+   
+   
 }
